@@ -1,15 +1,7 @@
-# Basic Sample Hardhat Project
+Deployed to 0xecf2943b3aFe1b7B38777b020E5ED93439ef9D5B
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+```
+npx hardhat run scripts/deploy.js --network mainnet
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS
 ```

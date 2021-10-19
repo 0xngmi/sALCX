@@ -27,8 +27,11 @@ module.exports = {
       }
     },
     mainnet: {
-      url: process.env.RPC,
-      accounts: [process.env.PRIVATEKEY]
+      url: 'https://mainnet-eth.compound.finance',
+      accounts: [process.env.PRIVATEKEY],
+      gasMultiplier: 1.3,
+      gasPrice: 85 * 1e9,
+      timeout: 2000000,
     }
   },
   etherscan: {
